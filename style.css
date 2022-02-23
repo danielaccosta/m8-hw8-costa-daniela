@@ -39,12 +39,12 @@ header {
 /* header link animations! */
 header a {
   font-size: 1.5rem;
-  color: var(--off-white);
+  color: white;
   display: inline-block;
   position:relative;
 }
 
-header a ::after{
+header a::after{
   content:'';
   position: absolute;
   width: 100%;
@@ -57,17 +57,24 @@ header a ::after{
   transition: transform 0.25s ease-out;
 }
 
-header a :hover ::after{
+header a:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  display:inline-block;
+  animation: main linear 7s;
 }
+
+@keyframes main {
+ 0% {opacity:0;}
+ 100% {opacity:1;}
+}
+
 /* end article link transitions */
 
 main > article, nav{
