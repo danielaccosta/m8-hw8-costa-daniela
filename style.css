@@ -64,10 +64,10 @@ header a:hover::after{
 /* end header link animations */
 
 /* article link transitions */
-main a {
+main a:hover {
   color: var(--danger-color);
   display:inline-block;
-  animation: main linear 7s;
+  animation: main linear 10s;
 }
 
 @keyframes main {
